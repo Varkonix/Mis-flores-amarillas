@@ -185,25 +185,40 @@ body {
 }
 
 .title {
-    font-size: clamp(2.8rem, 12vw, 5rem);
     font-weight: bold;
     margin: 0;
-    letter-spacing: 0.1em;
-    text-shadow: 
-        3px 3px 6px rgba(0, 0, 0, 0.5),
-        0 0 20px rgba(255, 255, 255, 0.3);
     font-family: 'Georgia', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.1em;
+    gap: 0.15em;
     line-height: 1;
 }
 
-.title-line {
+/* Línea "MI" - pequeña y elegante arriba */
+.title-line--mi {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: clamp(1.6rem, 7vw, 3rem);
+    letter-spacing: 0.5em;
+    opacity: 0.9;
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.4),
+        0 0 15px rgba(255, 255, 255, 0.25);
+}
+
+/* Línea "AMIGA" - grande y horizontal abajo */
+.title-line--amiga {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(3rem, 13vw, 5.5rem);
+    letter-spacing: 0.08em;
+    text-shadow:
+        3px 3px 6px rgba(0, 0, 0, 0.5),
+        0 0 25px rgba(255, 255, 255, 0.35);
 }
 
 .letter {
